@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Color Swapper</title>
-  </head>
-  <body>
-  
-  </body>
+  	<head>
+    	<meta charset="UTF-8">
+    	<title>Color Swapper</title>
+    	<style>
+    		body {
+    			background-color: blue;
+    			color: #fff;
+    		}
+    		.bg-color-1 {
+    			background-color: orange;
+    		}
+    		.bg-color-2 {
+    			background-color: green;
+    		}
+    		.bg-color-3 {
+    			background-color: purple;
+    		}
+    		.bg-color-4 {
+    			background-color: yellow;
+    		}
+    	</style>
+  	</head>
+		<body id="bgColor">
+			<div id="colorSwapOne">Change Color</div>
+			<script>
+			 	// function colorSwap(color) {
+			 	// 	return color;
+			 	// }
+			 	// let colorNew = colorSwap('#fff');	
+			 	function colorChange() {
+			 		document.getElementById('bgColor').className += ' bg-color-1';	
+			 	}	
+			 	window.onload = function() {
+			 		document.getElementById('colorSwapOne').addEventListener('click', colorChange);
+			 	} 	
+			</script> 
+		</body>
 </html>
